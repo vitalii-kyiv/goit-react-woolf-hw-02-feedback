@@ -4,36 +4,32 @@ class Statistics extends Component {
   render() {
     const { good, neutral, bad, total, positivePercentage } = this.props;
     return (
-      <div className="css.feedbackForm">
-        <h2 className="css.feedbackTitle">Please leave feedback</h2>
-        <h3 className="css.feedbackSecondTitle">Statistics</h3>
-        <ul className="css.feedbackList">
-          <li className="css.feedbackListItem">
-            <p className="css.feedbackItemText">
+      <div>
+        <ul>
+          <li>
+            <p>
               Good:
-              <span className="css.feedbackItemNumber">{good}</span>
+              <span>{good}</span>
             </p>
           </li>
-          <li className="css.feedbackListItem">
-            <p className="css.feedbackItemText">
+          <li>
+            <p>
               Neutral:
-              <span className="css.feedbackItemNumber">{neutral}</span>
+              <span>{neutral}</span>
             </p>
           </li>
-          <li className="css.feedbackListItem">
-            <p className="css.feedbackItemText">
+          <li>
+            <p>
               Bad:
-              <span className="css.feedbackItemNumber">{bad}</span>
+              <span>{bad}</span>
             </p>
-            <p className="css.feedbackItemText">
+            <p>
               Tatal:
-              <span className="css.feedbackItemNumber">{total()}</span>
+              <span>{total()}</span>
             </p>
-            <p className="css.feedbackItemText">
+            <p>
               Positive feedback:
-              <span className="css.feedbackItemNumber">
-                {positivePercentage()}%
-              </span>
+              <span>{positivePercentage()}%</span>
             </p>
           </li>
         </ul>
